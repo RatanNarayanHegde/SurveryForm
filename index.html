@@ -9,16 +9,81 @@
   </head>
   <body class="flex-container">
     <h1 id="title">Online Classes Survey</h1>
-    <p>A short survey about Online School</p>
+    <p id="description">A short survey about Online School</p>
     <form id="survey-form" action="" class="flex-container">
       <div class="input-field">
-        <label for="name">Enter you name:</label>
+        <label id="name-label" for="name">Enter you name:</label>
         <input id="name" type="text" placeholder="Name" required />
       </div>
       <div class="input-field">
-        <label for="email">Enter you email:</label>
+        <label id="email-label" for="email">Enter you email:</label>
         <input id="email" type="email" placeholder="Email" required />
       </div>
+      <div class="input-field">
+        <label id="number-label" for="number">Enter your Age:</label>
+        <input id="number" type="number" placeholder="Age" min="10" max="40" />
+      </div>
+      <div class="dropdown-menu">
+        <label id="dropdown-label" for="dropdown">What grade are you in?</label>
+        <select name="grade" id="dropdown">
+          <option selected disabled value="">Please choose an option</option>
+          <option value="1-6">Class 1-6</option>
+          <option value="6-10">Class 6-10</option>
+          <option value="Pre_University">Pre University</option>
+          <option value="College">College</option>
+        </select>
+      </div>
+      <div class="radiobuttons flex-container">
+        <p>How effective are online Classes?</p>
+        <div>
+          <input type="radio" id="not" name="effective" value="not-effective" />
+          <label for="not">Not Effective</label>
+        </div>
+        <div>
+          <input type="radio" id="same" name="effective" value="same" />
+          <label for="same">Same as before</label>
+        </div>
+        <div>
+          <input type="radio" id="more" name="effective" value="more" />
+          <label for="more">More effective than offline</label>
+        </div>
+      </div>
+      <div class="checkboxes flex-container">
+        <p style="text-align: left">
+          Select the problems you face in online classes (check all that apply)
+        </p>
+        <div>
+          <input type="checkbox" id="network" name="problems" value="network" />
+          <label for="network">Poor Network</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="electricity"
+            name="problems"
+            value="electricity"
+          />
+          <label for="electricity">Frequent Power Outages</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="internet"
+            name="problems"
+            value="internet"
+          />
+          <label for="internet">Irregular Internt</label>
+        </div>
+      </div>
+      <div class="textarea1 flex-container">
+        <label for="comments">Any Comments or Suggestions</label>
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="Enter your comments here"
+        ></textarea>
+      </div>
+      <button id="submit">Submit</button>
     </form>
   </body>
 </html>

@@ -18,23 +18,69 @@ body {
 
 form {
   width: 50%;
-  background-color: rgb(181, 212, 247);
+  background-color: rgba(181, 212, 247, 0.8);
   padding: 2em;
   border-radius: 10px;
 }
 .input-field {
   margin: 1em;
+  width: 50%;
+  text-align: left;
 }
-input[type="text"] {
+.dropdown-menu {
+  margin: 1em;
+  width: 50%;
+  text-align: left;
+}
+.radiobuttons {
+  margin: 1em;
+  padding-left: 1em;
+  width: 50%;
+  align-items: flex-start;
+  /* border: 1px solid rgb(170, 169, 169); */
+  border-radius: 25px;
+  background-color: rgba(181, 212, 247, 0.6);
+}
+.checkboxes {
+  margin: 1em;
+  padding-left: 1em;
+  width: 50%;
+  align-items: flex-start;
+  border-radius: 25px;
+  background-color: rgba(181, 212, 247, 0.6);
+}
+.textarea1 {
+  margin: 1em;
+  text-align: right;
+  width: 50%;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
   border: 1px solid grey;
   border-radius: 5px;
   width: 90%;
   height: 30px;
 }
 
-input[type="email"] {
+textarea {
+  height: 50px;
+}
+
+select {
+  background-color: white;
   border: 1px solid grey;
   border-radius: 5px;
   width: 90%;
+  height: 35px;
+}
+
+button {
+  font-size: large;
+  width: 20%;
   height: 30px;
+  background-color: #4caf50;
+  border: 1px solid lightgreen;
+  border-radius: 25px;
 }
